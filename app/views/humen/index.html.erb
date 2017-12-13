@@ -5,6 +5,9 @@
 <table>
   <thead>
     <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Vk</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +15,9 @@
   <tbody>
     <% @humen.each do |human| %>
       <tr>
+        <td><%= human.first_name %></td>
+        <td><%= human.last_name %></td>
+        <td><%= human.vk_id %></td>
         <td><%= link_to 'Show', human %></td>
         <td><%= link_to 'Edit', edit_human_path(human) %></td>
         <td><%= link_to 'Destroy', human, method: :delete, data: { confirm: 'Are you sure?' } %></td>

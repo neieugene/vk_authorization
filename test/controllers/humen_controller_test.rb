@@ -17,7 +17,7 @@ class HumenControllerTest < ActionDispatch::IntegrationTest
 
   test "should create human" do
     assert_difference('Human.count') do
-      post humen_url, params: { human: {  } }
+      post humen_url, params: { human: { first_name: @human.first_name, last_name: @human.last_name, vk_id: @human.vk_id } }
     end
 
     assert_redirected_to human_url(Human.last)
@@ -34,7 +34,7 @@ class HumenControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update human" do
-    patch human_url(@human), params: { human: {  } }
+    patch human_url(@human), params: { human: { first_name: @human.first_name, last_name: @human.last_name, vk_id: @human.vk_id } }
     assert_redirected_to human_url(@human)
   end
 

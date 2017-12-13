@@ -11,6 +11,21 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :human_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :human_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vk_id %>
+    <%= form.text_field :vk_id, id: :human_vk_id %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
