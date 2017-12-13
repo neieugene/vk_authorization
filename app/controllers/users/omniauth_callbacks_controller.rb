@@ -10,6 +10,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   		human.save
   	end
   	@human = human
-  	redirect_to "/humen"
+  	#redirect_to "/humen"
   end
 end
