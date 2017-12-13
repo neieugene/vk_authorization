@@ -4,8 +4,10 @@ one:
   first_name: MyString
   last_name: MyString
   vk_id: MyString
+  photo: MyString
 
 two:
   first_name: MyString
   last_name: MyString
   vk_id: MyString
+  photo: MyString
