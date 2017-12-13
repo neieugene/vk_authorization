@@ -8,6 +8,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   	else
   		human = Human.create(:vk_id => request.env["omniauth.auth"].extra.raw_info.id, :first_name => request.env["omniauth.auth"].extra.raw_info.first_name, :last_name => request.env["omniauth.auth"].extra.raw_info.last_name)
   	end
-  	redirect_to "/humen"
+  	@human = human
+  	#redirect_to "/humen"
   end
 end
