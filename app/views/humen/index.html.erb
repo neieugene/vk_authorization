@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th></th>
       <th>First name</th>
       <th>Last name</th>
       <th>Vk</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @humen.each do |human| %>
       <tr>
+        <td><%= image_tag(human.photo) %></td>
         <td><%= human.first_name %></td>
         <td><%= human.last_name %></td>
         <td><%= human.vk_id %></td>
